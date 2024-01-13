@@ -313,6 +313,62 @@ h3{
 
 }
 
+#videos #slider #videos-container{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    justify-content: center;
+    overflow: auto;
+}
+
+#videos #slider #videos-container .item{
+    display: flex;
+    border: solid 1px #00c3ff;
+    cursor: pointer;
+    overflow: hidden;
+    width:18% ;
+    /* height: 180px; */
+  
+    min-width: calc(320px / 2);
+    min-height: calc(180px / 2);
+
+}
+
+#videos #slider #videos-container .item a {
+    position: relative;
+}
+
+
+#videos #slider #videos-container .item a::before {
+    font-family: "Material Icons";
+    font-size: 50px;
+    content: "▹";
+    color: white;
+    position: absolute;
+    display: block;
+    left: 110px;
+    top: 65px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+#videos #slider #videos-container .item img{
+    transition:opacity 0.3s ease;
+    object-fit: contain;
+}
+
+
+#videos #slider #videos-container .item:hover img{
+    opacity: 0.6;
+}
+
 @media  screen and (max-width:1200px){
     nav .link-hide{
         display: none;

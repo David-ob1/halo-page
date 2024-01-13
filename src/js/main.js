@@ -23,10 +23,10 @@ moreOptions.addEventListener("click", (e) =>{
 
 const videos = [
     {
-        id: "PyMlV5_HRWk",
+        id: "Ohm98JGyc8U",
     },
     {
-        id: "XCbMVbeKlCg",
+        id: "YeeHJ3H7GuE",
     },
     {
         id: "Fmdb-KmlzD8",
@@ -80,18 +80,29 @@ function renderCurrentVideo(id){
 }
 
 function renderVideos (){
-    const html = videos.map( video =>{
+    const html = videos.map( (video, index)=>{
+         // 
         return `
         <div class="item">
-            <a href="#">
-                <img src="https://i3.ytimg.com/vi/${video.id}/hqdefault.jpg"
+            <a href="#" data-id="${index}">
+                <img src=" https://i.ytimg.com/vi/${video.id}/mqdefault.jpg">
+                       
             </a>
         </div>
 
         
         `
+
     })
     videosContainer.innerHTML = html.join("")
 
-    k
+    document.querySelectorAll(".item a").forEach(item => {
+        item.addEventListener("click", e => {
+            e.preventDefault();
+            const id = +item.getAttribute("data-id")
+            current = id
+            renderCurrentVideo(videos[current].id)
+
+        } )
+    })
 }
