@@ -369,6 +369,45 @@ h3{
     opacity: 0.6;
 }
 
+
+/* multiplayer */
+
+#multi-player{
+    height: 100vh;
+    background: url("../img/bg-multiplayer.jpeg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.info{
+    line-height:1.2;
+    padding: 40px;
+    width: 600px;
+    margin-right: 50px;
+    
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.info > h2{
+    text-transform: uppercase;
+}
+
+.info p{
+    font-size:20px;
+}
+
+@media  screen and (max-width:1519px){
+
+    .info{
+        background-color:rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+
+}
+
+
+
 @media  screen and (max-width:1200px){
     nav .link-hide{
         display: none;
@@ -387,7 +426,26 @@ h3{
         z-index:100;
         width: 100%;
     }
-    
+
+
+    #slider #current {
+        width: 80% !important;
+    }
+
+
+    #slider #current iframe {
+        height: 500px;
+    }
+
+    #multi-player{
+        background-position: center left;
+    }
+
+    .info{
+        width: 600px;
+        margin:0 auto;
+    }
+
 }
 
 
@@ -415,5 +473,25 @@ h3{
         height: 45vh;
     }
 
+        #slider #current {
+            width: 90%;
+        }
     
+
+        #slider #current iframe {
+            height: 300px;
+        }
+
+        #slider #videos-container{
+            display: none!important;
+        }
+
+        .info{
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        #multi-player{
+            background-position: -420px 0px;
+        }
 }
