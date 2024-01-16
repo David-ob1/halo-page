@@ -486,9 +486,25 @@ h3{
     }
 
     .info{
-        width: 600px;
+        width: 100%;
         margin:0 auto;
     }
+
+
+
+    #get-the-game .item-store {
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #get-the-game .item-store .left img {
+        width: 300px;
+      }
+    
+      #get-the-game .item-store .right {
+        width: 100%;
+      }
+
 
 }
 
@@ -538,4 +554,22 @@ h3{
         #multi-player{
             background-position: -420px 0px;
         }
+
+        #get-the-game .item-store {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+          }
+        
+          #get-the-game .item-store .left img {
+            width: 300px;
+          }
+        
+          #get-the-game .item-store .right {
+            text-align: center;
+            width: 100%;
+          }
+
+
 }
