@@ -438,6 +438,12 @@ h3{
 
 }
 
+footer{
+    height: 800px;
+    background: url(../img/master-chief-darkmode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -506,6 +512,11 @@ h3{
       }
 
 
+      footer{
+
+        background-position: center center;
+    }
+
 }
 
 
@@ -571,5 +582,11 @@ h3{
             width: 100%;
           }
 
+
+          
+        footer{
+            height: 400px;
+            background-position: center center;
+        }
 
 }
